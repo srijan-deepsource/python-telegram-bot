@@ -45,7 +45,7 @@ markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
 
 
 def facts_to_str(user_data: Dict[str, str]) -> str:
-    facts = list()
+    facts = []
 
     for key, value in user_data.items():
         facts.append(f'{key} - {value}')

@@ -98,7 +98,7 @@ def shipping_callback(update: Update, _: CallbackContext) -> None:
         query.answer(ok=False, error_message="Something went wrong...")
         return
 
-    options = list()
+    options = []
     # a single LabeledPrice
     options.append(ShippingOption('1', 'Shipping Option A', [LabeledPrice('A', 100)]))
     # an array of LabeledPrice objects
